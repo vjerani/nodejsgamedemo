@@ -1,0 +1,19 @@
+{
+  "name": "gamesrevolted",
+  "version": "1.0.0",
+  "description": "demo for job interview",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vjerani/nodejsgamedemo.git"
+  },
+  "author": "Vjeran Ivičić",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vjerani/nodejsgamedemo/issues"
+  },
+  "homepage": "https://github.com/vjerani/nodejsgamedemo#readme"
+}
