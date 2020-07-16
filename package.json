@@ -4,7 +4,10 @@
   "description": "demo for job interview",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "start": "node index.js"
+  },
+  "bin": {
+    "gameCli": "index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/vjerani/nodejsgamedemo/issues"
   },
-  "homepage": "https://github.com/vjerani/nodejsgamedemo#readme"
+  "homepage": "https://github.com/vjerani/nodejsgamedemo#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "esm": "^3.2.25",
+    "figlet": "^1.5.0"
+  }
 }

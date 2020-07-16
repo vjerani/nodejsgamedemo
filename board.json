@@ -1,0 +1,44 @@
+[
+    {
+        "entityId": "e1",
+        "health": 30,
+        "attack": 3,
+        "attackReady": true,
+        "entityType": 1,
+        "modifiers": [
+            {
+                "modifierType": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "entityId": "e2",
+        "health": 30,
+        "attack": 4,
+        "attackReady": true,
+        "entityType": 1,
+        "modifiers": []
+    },
+    {
+        "entityId": "e3",
+        "health": 80,
+        "attack": 6,
+        "attackReady": true,
+        "entityType": 2,
+        "modifiers": []
+    },
+    {
+        "entityId": "e4",
+        "health": 60,
+        "attack": 7,
+        "attackReady": true,
+        "entityType": 2,
+        "modifiers": [
+            {
+                "modifierType": 2,
+                "value": 2
+            }
+        ]
+    }
+]
