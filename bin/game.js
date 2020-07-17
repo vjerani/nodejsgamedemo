@@ -1,6 +1,7 @@
 const chalk = require('chalk');
 const prompts = require('prompts');
 prompts.override(require('yargs').argv);
+var fs = require('fs');
 
 class GameEngine {
     constructor(data) {
@@ -21,6 +22,17 @@ class GameEngine {
     LoadData() {
         let builder = new GameCharactersBuilder(this.board);
         this.gamecharacters = builder.create();
+    }
+
+    SaveData() {
+        var fs = require('fs');
+        const jsonData = JSON.stringify(this.gamecharacters);
+        fs.writeFile("board.json", jsonData, 'utf8', function(err) {
+            if (err) {
+                console.log('Error while saving file' + err);
+                throw err;
+            }
+        });
     }
 
     getPlayableCharacters() {
@@ -107,6 +119,7 @@ class GameEngine {
                         }
                     ]);
                     attacker.attackTarget(this.gamecharacters.find(x => x.entityId === targetresponse.targetid));
+                    this.SaveData();
                     this.NextMove();
                 }
             })();
@@ -135,7 +148,6 @@ class GameCharacter {
             target.health = target.health - damage < 0 ? 0 : target.health - damage;
             console.log(targetType + ' ID:' + target.entityId + ' health is ' + target.health);
             if (target instanceof Creature && target.health > 0) {
-                console.log('retaliate');
                 target.retaliate(this);
             }
             this.attackReady = false;
