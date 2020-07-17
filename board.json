@@ -1,7 +1,7 @@
 [
     {
         "entityId": "e1",
-        "health": 30,
+        "health": 3,
         "attack": 3,
         "attackReady": true,
         "entityType": 1,
@@ -14,7 +14,7 @@
     },
     {
         "entityId": "e2",
-        "health": 30,
+        "health": 3,
         "attack": 4,
         "attackReady": true,
         "entityType": 1,
@@ -22,7 +22,7 @@
     },
     {
         "entityId": "e3",
-        "health": 80,
+        "health": 8,
         "attack": 6,
         "attackReady": true,
         "entityType": 2,
@@ -30,7 +30,7 @@
     },
     {
         "entityId": "e4",
-        "health": 60,
+        "health": 6,
         "attack": 7,
         "attackReady": true,
         "entityType": 2,
