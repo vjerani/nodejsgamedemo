@@ -32,7 +32,6 @@ class GameEngine {
     }
 
     getPlayableTargets(attacker) {
-        console.log(attacker instanceof Avartar ? 'Avartar' : 'Creature');
         let playable = this.getAttackableCharacters().filter(x => x.entityId !== attacker.entityId);
         if (attacker.entityType === 2) {
             return playable.filter(x => x.entityType === 2);
